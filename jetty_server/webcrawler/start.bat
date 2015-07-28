@@ -1,0 +1,1 @@
+"%JAVA_HOME%"\jre\bin\java -jar start.jar

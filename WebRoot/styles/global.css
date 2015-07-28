@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#cc2328;text-decoration:none}
+a:hover{color:#cc2328;text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+
+.header {width:auto; background:url(../images/header_bg.gif) repeat-x; height:63px;}
+.pg_logo {width:530px; height:63px; background:url(../images/pg_logo.jpg); }
+.main-container {width:800px; height:420px; margin:30px auto; background:#fff; padding:8px;}
+.main-container h1 { font-family:"Microsoft YaHei","微软雅黑"; font-size:14px; border-bottom:1px solid #e2e2e2; color:#6c6c6c; padding:5px; margin:20px 0 20px 0;}
+.num { background:#464646; padding:0 5px 0 5px;text-align:center; color:#FFF; width:20px; height:20px; margin-right:5px; }
+.btn-large {width:159px; height:41px; background:url(../images/icon_bg.png) 0 0px; color:#FFF; font-size:14px; font-family:"微软雅黑"; display:block; text-align:center;text-decoration:none;}
+.btn-large:hover {width:159px; height:41px; background:url(../images/icon_bg.png) -159px 0px; color:#FFF; font-size:14px; font-family:"微软雅黑"; display:block; text-align:center;text-decoration:none;}
+.btn-small {width:146px; height:34px; background:url(../images/icon_bg.png) 0 -46px; color:#FFF; font-size:14px; font-family:"微软雅黑"; display:block; text-align:center;text-decoration:none;}
+.btn-small:hover {width:146px; height:34px; background:url(../images/icon_bg.png) -146px -46px; color:#FFF; font-size:14px; font-family:"微软雅黑"; display:block; text-align:center;text-decoration:none;}
+.btn {width:146px; height:34px; margin:20px auto; text-align:center;}
+.text { margin-left:20px;}
+.container {width:950px; height:auto; margin:20px auto;}
+.toolbar {width:auto; height:25px; border-bottom:1px solid #dcdcdc; font-family:"微软雅黑"; font-size:14px;}
+.tag-1 {width:3px; height:20px; float:left; margin-right:5px; display:block; background:#d52f34}
+.toolbar p { float:left;}
+.toolbar em {float:right;}
+.search-bg {width:820px; height:120px; margin:20px auto; background:url(../images/icon_line.jpg) 0 bottom no-repeat;}
+.input-text { height:21px; width:380px; border:1px solid #cfcfcf; padding:2px;}
+.input-blue {border:1px solid #e33a3f;}
+.datagrid {width:820px; height:auto; margin:20px auto;}
+.datagrid  table { border:1px solid #dcdcdc; margin-bottom:20px; line-height:18px;}
+.datagrid .td_fill { background:#f6f6f6; border-right:1px solid #dcdcdc; line-height:18px; text-align:center; color:#3e3e3e}
+.datagrid .span1 { background:#f6f6f6; border-right:1px solid #dcdcdc; line-height:18px; text-align:center; color:#3e3e3e; border-bottom:1px solid #dcdcdc;}
+.datagrid .span2 {line-height:18px; text-align:right; color:#3e3e3e; border-bottom:1px solid #dcdcdc;}
+.datagrid .span3 {line-height:18px; text-align:left; color:#3e3e3e; border-bottom:1px solid #dcdcdc;}
+.datagrid td { height:16px; padding:4px;}
+.datagrid span { margin-right:60px;}
+.form-actions {width:820px; height:auto; margin:20px auto;}
+.form-actions table { border-top:1px solid #dcdcdc; border-right:1px solid #dcdcdc; line-height:22px; color:#515151; margin-bottom:20px;}
+.form-actions tr td { border-left:1px solid #dcdcdc; border-bottom:1px solid #dcdcdc;}
+.form-actions td {padding:4px 6px 0 6px;}
+.form-actions td img {border:0; margin-top:4px;}
+.td-bg { background:#f6f6f6;}
+.ipt-text { border:1px solid #ccc; height:18px; padding:2px; margin-bottom:5px;}
+.lableword-l {width:420px; height:auto; float:left; margin-right:15px;}
+.lableword-r {width:360px; float:left; height:auto;}
+.footer { height:30px; text-align:center; color:#999; border-top:0px solid #d9d9d9; padding-top:5px; margin-top:50px; font-family:Verdana, Geneva, sans-serif;}
+.ff0000 {color:#ff0000;}

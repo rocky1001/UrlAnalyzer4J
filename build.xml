@@ -1,0 +1,86 @@
+<project name="URLAnalyzer" default="compile" basedir=".">
+	<property name="src" location="./src/main/java" />
+	<property name="resource" location="./src/main/resources" />
+	<property name="build" location="./build" />
+	<property name="webroot" location="./WebRoot" />
+	<property name="webserver" location="./jetty_server" />
+
+	<target name="init">
+		<mkdir dir="${build}/classes" />
+		<mkdir dir="${build}/webcrawler" />
+		<delete dir="${webserver}/webapps/webcraler" />
+	</target>
+	
+	<target name="compile" depends="init">
+
+		<javac srcdir="${src}" destdir="${build}/classes" encoding="GB2312" debug="true">
+			<classpath>
+				<fileset dir="./WebRoot/WEB-INF/lib">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+			<compilerarg value="-Xlint" />
+		</javac>
+
+		<jar jarfile="${build}/webcrawler.jar">
+			<fileset dir="${build}/classes">
+				<include name="cn/**/*" />
+			</fileset>
+		</jar>
+		<copy file="${build}/webcrawler.jar" tofile="d:\version\webcrawler.jar" />
+
+		<copy todir="${build}/webcrawler/webcrawler">
+			<fileset dir="${webroot}">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+
+		<copy todir="${build}/webcrawler/webcrawler/WEB-INF/lib">
+			<fileset dir="${build}">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<!--Commented by qiwenyuan at 2012-11-23  
+		<copy todir="${build}/webcrawler/webcrawler/WEB-INF/classes">
+			<fileset dir="${resource}">
+				<include name="*.txt" />
+			</fileset>
+		</copy>
+-->
+		<zip file="${build}/webcrawler_update.zip">
+			<fileset dir="${build}/webcrawler">
+			</fileset>
+		</zip>
+		<!--Commented by qiwenyuan at 2012-11-23		
+		<copy todir="${build}">
+			<fileset dir="setup">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+
+		<exec dir="${build}" executable="cmd">
+			<arg value="/c"/>
+			<arg value="${build}/allatori.bat"/>
+		</exec>
+-->
+		<copy todir="${webserver}/webcrawler/webapps">
+			<fileset dir="${build}/webcrawler">
+				<include name="/" />
+			</fileset>
+		</copy>
+
+		<delete>
+			<fileset dir="${build}" excludes="webcrawler_update.zip" />
+		</delete>
+		<delete dir="${build}/classes" />
+		<delete dir="${build}/webcrawler" />
+
+		<zip file="${build}/webcrawler_setup.zip">
+			<fileset dir="${webserver}">
+			</fileset>
+		</zip>
+		<copy file="${build}/webcrawler_update.zip" tofile="d:\version\webcrawler_update.zip" />
+		<copy file="${build}/webcrawler_setup.zip" tofile="d:\version\webcrawler_setup.zip" />
+
+	</target>
+</project>

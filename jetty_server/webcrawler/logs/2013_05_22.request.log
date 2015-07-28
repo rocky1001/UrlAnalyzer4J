@@ -1,0 +1,9 @@
+127.0.0.1 -  -  [22/五月/2013:02:38:21 +0000] "GET /webcrawler/ HTTP/1.1" 200 - 
+127.0.0.1 -  -  [22/五月/2013:02:38:24 +0000] "GET /webcrawler/styles/global.css HTTP/1.1" 200 - 
+127.0.0.1 -  -  [22/五月/2013:02:38:25 +0000] "GET /webcrawler/images/pg_logo.jpg HTTP/1.1" 200 - 
+127.0.0.1 -  -  [22/五月/2013:02:38:25 +0000] "GET /webcrawler/images/header_bg.gif HTTP/1.1" 200 - 
+127.0.0.1 -  -  [22/五月/2013:02:38:25 +0000] "GET /webcrawler/images/icon_bg.png HTTP/1.1" 200 - 
+127.0.0.1 -  -  [22/五月/2013:02:38:26 +0000] "GET /webcrawler/LableWordServlet?action=searchLabel HTTP/1.1" 200 - 
+127.0.0.1 -  -  [22/五月/2013:02:38:26 +0000] "GET /webcrawler/images/icon_delete.gif HTTP/1.1" 200 - 
+127.0.0.1 -  -  [22/五月/2013:02:38:26 +0000] "GET /webcrawler/images/icon_view.gif HTTP/1.1" 200 - 
+127.0.0.1 -  -  [22/五月/2013:02:38:30 +0000] "GET /favicon.ico HTTP/1.1" 404 300 
